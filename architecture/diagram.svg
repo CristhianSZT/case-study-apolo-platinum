@@ -1,0 +1,138 @@
+<svg width="100%" viewBox="0 0 680 700" xmlns="http://www.w3.org/2000/svg" style="background:#0d1117;font-family:Arial,sans-serif;">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#4a5568" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-green" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#48bb78" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<marker id="arrow-amber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="#f6ad55" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<!-- Title -->
+<text x="340" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#e2e8f0">Plataforma Apolo Platinum — Arquitectura del sistema</text>
+<text x="340" y="44" text-anchor="middle" font-size="11" fill="#4a5568">Boletaje · Operaciones · Venta en Línea · Multi-servidor AWS</text>
+
+<!-- USERS ROW -->
+<rect x="25" y="58" width="100" height="48" rx="8" fill="#1e2a3a" stroke="#4a5568" stroke-width="0.8"/>
+<text x="75" y="78" text-anchor="middle" font-size="11" font-weight="600" fill="#cbd5e0">Administrador</text>
+<text x="75" y="94" text-anchor="middle" font-size="10" fill="#718096">Gestión total</text>
+
+<rect x="140" y="58" width="100" height="48" rx="8" fill="#1e2a3a" stroke="#4a5568" stroke-width="0.8"/>
+<text x="190" y="78" text-anchor="middle" font-size="11" font-weight="600" fill="#cbd5e0">Taquillero</text>
+<text x="190" y="94" text-anchor="middle" font-size="10" fill="#718096">Venta · Abordaje</text>
+
+<rect x="255" y="58" width="100" height="48" rx="8" fill="#1e2a3a" stroke="#4a5568" stroke-width="0.8"/>
+<text x="305" y="78" text-anchor="middle" font-size="11" font-weight="600" fill="#cbd5e0">Pasajero</text>
+<text x="305" y="94" text-anchor="middle" font-size="10" fill="#718096">Compra online</text>
+
+<!-- Arrows users down -->
+<line x1="75" y1="106" x2="75" y2="138" stroke="#4a5568" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="190" y1="106" x2="170" y2="138" stroke="#4a5568" stroke-width="1" marker-end="url(#arrow)"/>
+<line x1="305" y1="106" x2="440" y2="138" stroke="#4a5568" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- AWS EC2 t3.large CONTAINER -->
+<rect x="18" y="138" width="390" height="390" rx="14" fill="none" stroke="#2d4a6e" stroke-width="1"/>
+<text x="36" y="157" font-size="11" fill="#3b82f6">AWS EC2 t3.large — api.apoloplatinum.com.mx</text>
+
+<!-- FRONTEND ADMIN -->
+<rect x="35" y="165" width="180" height="72" rx="8" fill="#0d2a4a" stroke="#3b82f6" stroke-width="0.8"/>
+<text x="125" y="184" text-anchor="middle" font-size="12" font-weight="600" fill="#90cdf4">Vue.js 2 — Admin</text>
+<text x="125" y="200" text-anchor="middle" font-size="11" fill="#63b3ed">Vuex · Vue Router · BootstrapVue</text>
+<text x="125" y="215" text-anchor="middle" font-size="10" fill="#4a90d9">Gestión + Taquilla/Operaciones</text>
+<text x="125" y="228" text-anchor="middle" font-size="10" fill="#4a90d9">Asientos interactivos + WebSockets</text>
+
+<!-- BACKEND API -->
+<rect x="230" y="165" width="160" height="72" rx="8" fill="#1a0d4a" stroke="#7c3aed" stroke-width="0.8"/>
+<text x="310" y="184" text-anchor="middle" font-size="12" font-weight="600" fill="#c4b5fd">Laravel API REST</text>
+<text x="310" y="200" text-anchor="middle" font-size="11" fill="#a78bfa">Passport JWT · Spatie</text>
+<text x="310" y="215" text-anchor="middle" font-size="11" fill="#a78bfa">WebSockets server</text>
+<text x="310" y="228" text-anchor="middle" font-size="10" fill="#9f7aea">PHP 8 · Apache 2</text>
+
+<!-- Arrows frontend-backend -->
+<line x1="215" y1="193" x2="228" y2="193" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow-blue)"/>
+<line x1="228" y1="205" x2="215" y2="205" stroke="#3b82f6" stroke-width="1" marker-end="url(#arrow-blue)"/>
+<text x="221" y="188" text-anchor="middle" font-size="8" fill="#4a5568">JWT</text>
+
+<!-- Arrow backend down to services -->
+<line x1="250" y1="237" x2="200" y2="268" stroke="#4a5568" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- SERVICES ROW -->
+<rect x="35" y="272" width="120" height="48" rx="8" fill="#2a1a00" stroke="#d97706" stroke-width="0.8"/>
+<text x="95" y="291" text-anchor="middle" font-size="11" font-weight="600" fill="#fcd34d">Facturación</text>
+<text x="95" y="307" text-anchor="middle" font-size="10" fill="#fbbf24">FacturaAPI CFDI</text>
+
+<rect x="170" y="272" width="120" height="48" rx="8" fill="#2a1a00" stroke="#d97706" stroke-width="0.8"/>
+<text x="230" y="291" text-anchor="middle" font-size="11" font-weight="600" fill="#fcd34d">Terminales</text>
+<text x="230" y="307" text-anchor="middle" font-size="10" fill="#fbbf24">BBVA Total POS</text>
+
+<rect x="305" y="272" width="88" height="48" rx="8" fill="#2a1a00" stroke="#d97706" stroke-width="0.8"/>
+<text x="349" y="291" text-anchor="middle" font-size="11" font-weight="600" fill="#fcd34d">SMTP</text>
+<text x="349" y="307" text-anchor="middle" font-size="10" fill="#fbbf24">Notificaciones</text>
+
+<!-- Arrow to DB -->
+<line x1="200" y1="320" x2="185" y2="350" stroke="#4a5568" stroke-width="1" marker-end="url(#arrow)"/>
+
+<!-- DATABASE -->
+<rect x="60" y="354" width="280" height="44" rx="8" fill="#0d1a3a" stroke="#3b82f6" stroke-width="0.8"/>
+<text x="200" y="373" text-anchor="middle" font-size="13" font-weight="600" fill="#90cdf4">PostgreSQL 14.5</text>
+<text x="200" y="389" text-anchor="middle" font-size="11" fill="#63b3ed">Rutas, corridas, boletos, asientos, pasajeros</text>
+
+<!-- WEBSOCKETS highlight -->
+<rect x="35" y="412" width="360" height="36" rx="8" fill="#1a0d2a" stroke="#7c3aed" stroke-width="0.8"/>
+<text x="215" y="428" text-anchor="middle" font-size="12" font-weight="600" fill="#c4b5fd">WebSockets — Asientos en tiempo real</text>
+<text x="215" y="442" text-anchor="middle" font-size="10" fill="#a78bfa">Sincronización de disponibilidad entre taquilla y portal público</text>
+
+<!-- SECURITY -->
+<rect x="35" y="462" width="360" height="36" rx="8" fill="#3a0d0d" stroke="#e53e3e" stroke-width="0.8"/>
+<text x="215" y="478" text-anchor="middle" font-size="12" font-weight="600" fill="#feb2b2">Seguridad</text>
+<text x="215" y="494" text-anchor="middle" font-size="10" fill="#fc8181">Passport JWT · Spatie Permissions · SSL · Laravel Cors</text>
+
+<!-- AWS EC2 t2.micro - VENTAS -->
+<rect x="425" y="138" width="235" height="160" rx="14" fill="none" stroke="#2d4a2d" stroke-width="1"/>
+<text x="442" y="157" font-size="11" fill="#48bb78">AWS EC2 t2.micro — ventas.apoloplatinum.com.mx</text>
+
+<rect x="438" y="165" width="205" height="72" rx="8" fill="#0d2a1a" stroke="#48bb78" stroke-width="0.8"/>
+<text x="541" y="184" text-anchor="middle" font-size="12" font-weight="600" fill="#9ae6b4">Vue.js 2 — Ventas</text>
+<text x="541" y="200" text-anchor="middle" font-size="11" fill="#68d391">E-commerce público responsive</text>
+<text x="541" y="215" text-anchor="middle" font-size="11" fill="#68d391">Asientos interactivos realtime</text>
+<text x="541" y="228" text-anchor="middle" font-size="10" fill="#48bb78">OpenPay · PayPal · WebSockets</text>
+
+<!-- Arrow ventas to API -->
+<line x1="438" y1="200" x2="408" y2="200" stroke="#48bb78" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow-green)"/>
+
+<!-- EXTERNAL SERVICES -->
+<rect x="425" y="318" width="110" height="48" rx="8" fill="#1e2a3a" stroke="#4a5568" stroke-width="0.8"/>
+<text x="480" y="337" text-anchor="middle" font-size="11" font-weight="600" fill="#cbd5e0">OpenPay</text>
+<text x="480" y="353" text-anchor="middle" font-size="10" fill="#718096">Tarjeta + OXXO</text>
+<line x1="480" y1="306" x2="480" y2="316" stroke="#4a5568" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+
+<rect x="548" y="318" width="110" height="48" rx="8" fill="#1e2a3a" stroke="#4a5568" stroke-width="0.8"/>
+<text x="603" y="337" text-anchor="middle" font-size="11" font-weight="600" fill="#cbd5e0">PayPal</text>
+<text x="603" y="353" text-anchor="middle" font-size="10" fill="#718096">Pago internacional</text>
+<line x1="603" y1="306" x2="603" y2="316" stroke="#4a5568" stroke-width="0.8" stroke-dasharray="3 2" marker-end="url(#arrow)"/>
+
+<!-- FacturaAPI external -->
+<rect x="425" y="390" width="235" height="44" rx="8" fill="#2a1a00" stroke="#d97706" stroke-width="0.8"/>
+<text x="542" y="408" text-anchor="middle" font-size="12" font-weight="600" fill="#fcd34d">FacturaAPI — CFDI SAT México</text>
+<text x="542" y="424" text-anchor="middle" font-size="10" fill="#fbbf24">1,500 timbres/mes — Facturación electrónica</text>
+<line x1="155" y1="272" x2="425" y2="408" stroke="#d97706" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow-amber)"/>
+
+<!-- Legend -->
+<rect x="18" y="548" width="642" height="50" rx="8" fill="#111827" stroke="#2d3748" stroke-width="0.5"/>
+<text x="36" y="568" font-size="11" font-weight="600" fill="#718096">Leyenda:</text>
+<line x1="100" y1="565" x2="130" y2="565" stroke="#3b82f6" stroke-width="1.5"/>
+<text x="136" y="569" font-size="10" fill="#718096">HTTP/JWT</text>
+<line x1="210" y1="565" x2="240" y2="565" stroke="#48bb78" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="246" y="569" font-size="10" fill="#718096">Frontend independiente</text>
+<line x1="390" y1="565" x2="420" y2="565" stroke="#d97706" stroke-width="1.5" stroke-dasharray="4 3"/>
+<text x="426" y="569" font-size="10" fill="#718096">Servicio externo</text>
+<line x1="520" y1="565" x2="550" y2="565" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="556" y="569" font-size="10" fill="#718096">WebSockets</text>
+<text x="36" y="590" font-size="10" fill="#4a5568">Stack: Laravel + PHP 8 · Vue.js 2 + Vuex · PostgreSQL 14.5 · WebSockets · OpenPay · PayPal · FacturaAPI CFDI · BBVA POS · AWS EC2</text>
+</svg>
